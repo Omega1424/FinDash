@@ -135,25 +135,25 @@ def app():
         st.line_chart(company.prices)
         st.table(overview_df)
 
-        with st.beta_expander('Profit margins (as of {})'.format(company.year_end)):
+        with st.expander('Profit margins (as of {})'.format(company.year_end)):
             profit_margin_index = ['Gross margin', 'Operating margin', 'Net margin']
             profit_margin_df = pd.DataFrame(company.profit_margin_dict, index = profit_margin_index)
             st.table(profit_margin_df)
             st.bar_chart(profit_margin_df)
 
-        with st.beta_expander('Liquidity ratios (as of {})'.format(company.year_end)):  
+        with st.expander('Liquidity ratios (as of {})'.format(company.year_end)):  
             liquidity_ratio_index = ['Current ratio', 'Quick ratio', 'Cash ratio']
             liquidity_ratio_df = pd.DataFrame(company.liquidity_ratio_dict, index = liquidity_ratio_index)
             st.table(liquidity_ratio_df)
             st.bar_chart(liquidity_ratio_df)
 
-        with st.beta_expander('Leverage ratios (as of {})'.format(company.year_end)):
+        with st.expander('Leverage ratios (as of {})'.format(company.year_end)):
             leverage_ratio_index = ['Debt/total assets ratio', 'Debt/equity ratio', 'Interest coverage ratio']
             leverage_ratio_df = pd.DataFrame(company.leverage_ratio_dict, index = leverage_ratio_index)
             st.table(leverage_ratio_df)
             st.bar_chart(leverage_ratio_df)
 
-        with st.beta_expander('Efficiency ratios (as of {})'.format(company.year_end)):
+        with st.expander('Efficiency ratios (as of {})'.format(company.year_end)):
             efficiency_ratio_index = ['Asset turnover', 'Receivables turnover', 'Inventory turnover']
             efficiency_ratio_df = pd.DataFrame(company.efficiency_ratio_dict, index = efficiency_ratio_index)
             st.table(efficiency_ratio_df)
