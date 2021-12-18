@@ -1,5 +1,5 @@
 # Financial Dashboard
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/HYbPQn01MiE
 #### Description:
 This project is a web app made using python and the open source python-framework Streamlit.
 It is used to help one do two things: Find out information about a company to aid their decision in buying that company's stock, and to keep track of their portfolio by adding transactions through a simple input interface that gives out a graph showing the percentage of each stock in the portfolio.
